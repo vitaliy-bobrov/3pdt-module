@@ -1,0 +1,232 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SparkFun-Electromechanical:SWITCH-3PDT S1
+U 1 1 602E9D35
+P 5700 2950
+F 0 "S1" H 5650 3231 50  0000 C CNN
+F 1 "3PDT" H 5650 3140 50  0000 C CNN
+F 2 "SparkFun-Electromechanical:3PDT.LUGS.SPF" H 5730 3100 20  0001 C CNN
+F 3 "" H 5700 2950 50  0001 C CNN
+	1    5700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Electromechanical:SWITCH-3PDT S1
+U 2 1 602EDE17
+P 5700 3600
+F 0 "S1" H 5650 3881 50  0000 C CNN
+F 1 "3PDT" H 5650 3790 50  0000 C CNN
+F 2 "SparkFun-Electromechanical:3PDT.LUGS.SPF" H 5730 3750 20  0001 C CNN
+F 3 "" H 5700 3600 50  0001 C CNN
+	2    5700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SparkFun-Electromechanical:SWITCH-3PDT S1
+U 3 1 602EFB5A
+P 5700 4250
+F 0 "S1" H 5650 4531 50  0000 C CNN
+F 1 "3PDT" H 5650 4440 50  0000 C CNN
+F 2 "SparkFun-Electromechanical:3PDT.LUGS.SPF" H 5730 4400 20  0001 C CNN
+F 3 "" H 5700 4250 50  0001 C CNN
+	3    5700 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 602F104A
+P 5050 2950
+F 0 "H3" V 5287 2953 50  0001 C CNN
+F 1 "JI" V 5200 3000 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 5050 2950 50  0001 C CNN
+F 3 "~" H 5050 2950 50  0001 C CNN
+	1    5050 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H7
+U 1 1 602F7F25
+P 5050 3600
+F 0 "H7" V 5287 3603 50  0001 C CNN
+F 1 "GND" V 5200 3650 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 5050 3600 50  0001 C CNN
+F 3 "~" H 5050 3600 50  0001 C CNN
+	1    5050 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 602FF1DB
+P 6300 2850
+F 0 "H2" V 6537 2853 50  0001 C CNN
+F 1 "BI" V 6150 2900 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 6300 2850 50  0001 C CNN
+F 3 "~" H 6300 2850 50  0001 C CNN
+	1    6300 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 60306473
+P 7400 3500
+F 0 "H5" V 7637 3503 50  0001 C CNN
+F 1 "LED" V 7250 3550 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 7400 3500 50  0001 C CNN
+F 3 "~" H 7400 3500 50  0001 C CNN
+	1    7400 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 6030DE10
+P 7100 3500
+F 0 "R4" V 6904 3500 50  0000 C CNN
+F 1 "1K" V 6995 3500 50  0000 C CNN
+F 2 "resistors:0.3_22.B" H 7100 3500 50  0001 C CNN
+F 3 "~" H 7100 3500 50  0001 C CNN
+	1    7100 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 6030EAF7
+P 6700 3500
+F 0 "RV1" V 6493 3500 50  0000 C CNN
+F 1 "BRIGHTNESS" V 6584 3500 50  0000 C CNN
+F 2 "potentiometers:TRIM1" H 6700 3500 50  0001 C CNN
+F 3 "~" H 6700 3500 50  0001 C CNN
+	1    6700 3500
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60310722
+P 6200 3500
+F 0 "D2" H 6193 3717 50  0000 C CNN
+F 1 "LED" H 6193 3626 50  0000 C CNN
+F 2 "diodes:3MM_IO" H 6200 3500 50  0001 C CNN
+F 3 "~" H 6200 3500 50  0001 C CNN
+	1    6200 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3500 6000 3500
+Wire Wire Line
+	5150 3600 5250 3600
+Wire Wire Line
+	6200 2850 5950 2850
+Wire Wire Line
+	5950 2850 5950 3700
+Wire Wire Line
+	5950 3700 5800 3700
+Wire Wire Line
+	5150 2950 5500 2950
+$Comp
+L Mechanical:MountingHole_Pad H9
+U 1 1 60336BEC
+P 5050 4250
+F 0 "H9" V 5287 4253 50  0001 C CNN
+F 1 "JO" V 5200 4300 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 5050 4250 50  0001 C CNN
+F 3 "~" H 5050 4250 50  0001 C CNN
+	1    5050 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 4250 5500 4250
+$Comp
+L Mechanical:MountingHole_Pad H8
+U 1 1 6034E1BB
+P 6300 4150
+F 0 "H8" V 6537 4153 50  0001 C CNN
+F 1 "BO" V 6150 4200 50  0000 C CNN
+F 2 "supply_pins:PAD1" H 6300 4150 50  0001 C CNN
+F 3 "~" H 6300 4150 50  0001 C CNN
+	1    6300 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 4150 6200 4150
+Wire Wire Line
+	5800 2850 5950 2850
+Connection ~ 5950 2850
+Wire Wire Line
+	6350 3500 6450 3500
+Wire Wire Line
+	6450 3500 6450 3750
+Wire Wire Line
+	6450 3750 6700 3750
+Wire Wire Line
+	6700 3750 6700 3650
+Connection ~ 6450 3500
+Wire Wire Line
+	6450 3500 6550 3500
+Wire Wire Line
+	6850 3500 7000 3500
+Wire Wire Line
+	7200 3500 7300 3500
+Wire Wire Line
+	5800 3050 5800 3200
+Wire Wire Line
+	5800 3200 4750 3200
+Wire Wire Line
+	4750 3200 4750 4500
+Wire Wire Line
+	4750 4500 5950 4500
+Wire Wire Line
+	5950 4500 5950 4350
+Wire Wire Line
+	5950 4350 5800 4350
+$Comp
+L power:GND2 #PWR015
+U 1 1 5F9528AC
+P 5250 3750
+F 0 "#PWR015" H 5250 3500 50  0001 C CNN
+F 1 "GND2" H 5255 3577 50  0000 C CNN
+F 2 "" H 5250 3750 50  0001 C CNN
+F 3 "" H 5250 3750 50  0001 C CNN
+	1    5250 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3750 5250 3600
+Connection ~ 5250 3600
+Wire Wire Line
+	5250 3600 5500 3600
+$Comp
+L Device:LED D?
+U 1 1 604113BE
+P 6200 3150
+F 0 "D?" H 6193 3367 50  0000 C CNN
+F 1 "LED" H 6193 3276 50  0000 C CNN
+F 2 "diodes:3MM_IO" H 6200 3150 50  0001 C CNN
+F 3 "~" H 6200 3150 50  0001 C CNN
+	1    6200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3150 6450 3150
+Wire Wire Line
+	6450 3150 6450 3500
+Wire Wire Line
+	6050 3150 6000 3150
+Wire Wire Line
+	6000 3150 6000 3500
+Connection ~ 6000 3500
+Wire Wire Line
+	6000 3500 6050 3500
+$EndSCHEMATC
